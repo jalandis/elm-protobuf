@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -euo pipefail
+set -x
 
 ./complie_test_plugin
 ./run_elm_tests
