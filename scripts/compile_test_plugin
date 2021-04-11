@@ -6,11 +6,5 @@ set -x
 readonly ROOT="$(git rev-parse --show-toplevel)"
 readonly TEST_PLUGIN="${ROOT}/elm-protobuf-test"
 
-<<<<<<< HEAD
 cd "${ROOT}"
 GO111MODULE=on go build -o "${TEST_PLUGIN}" ./cmd/protoc-gen-elm
-=======
-cd "${ROOT}/protoc-gen-elm"
-GO111MODULE=on go build -o "${TEST_PLUGIN}" ./cmd/protoc-gen-elm
-cd ..
->>>>>>> 9d4560185022c6d376a5bed6c26b032460c33db6
